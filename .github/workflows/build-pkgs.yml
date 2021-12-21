@@ -12,10 +12,11 @@ jobs:
           - neovim-git
           - tmux-git
           - flat-remix
+          - github.com/gamoutatsumi/alacritty-mold-git
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
-      - uses: weiliang1503/build-aur-action@master
+      - uses: gamoutatsumi/build-aur-action@master
         with:
           repo-name: ${{ matrix.repos }}
       - uses: ncipollo/release-action@v1
