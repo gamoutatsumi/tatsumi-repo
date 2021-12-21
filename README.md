@@ -1,3 +1,8 @@
+# tatsumi-repo
+
+[![build-pkgs](https://github.com/gamoutatsumi/tatsumi-repo/actions/workflows/build-pkgs.yml/badge.svg)](https://github.com/gamoutatsumi/tatsumi-repo/actions/workflows/build-pkgs.yml)
+[![update-db](https://github.com/gamoutatsumi/tatsumi-repo/actions/workflows/update-db.yml/badge.svg)](https://github.com/gamoutatsumi/tatsumi-repo/actions/workflows/update-db.yml)
+
 `/etc/pacman.conf`
 
 ```conf
