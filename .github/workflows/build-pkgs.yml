@@ -14,6 +14,7 @@ jobs:
           - vim-git-runtime
           - tmux-git
           - alacritty-git
+          - flat-remix
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
