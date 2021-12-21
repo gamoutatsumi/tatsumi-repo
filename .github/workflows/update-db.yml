@@ -1,0 +1,24 @@
+name: update-db
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: 
+      - build-pkgs
+    types:
+      - completed
+
+jobs:
+  dbupdate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: weiliang1503/update-db-for-repo@master
+        with:
+          name: tatsumi-repo
+          url: 'gamoutatsumi/tatsumi-repo'
+      - uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: true
+          tag: "x86_64"
+          artifacts: "./tatsumi-repo.*"
+          token: ${{ secrets.GITHUB_TOKEN }}
