@@ -13,6 +13,7 @@ jobs:
           - vim-git
           - vim-git-runtime
           - tmux-git
+          - alacritty-git
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
