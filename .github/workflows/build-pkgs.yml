@@ -10,8 +10,6 @@ jobs:
       matrix:
         repos:
           - neovim-git
-          - vim-git
-          - vim-git-runtime
           - tmux-git
           - alacritty-git
           - flat-remix
