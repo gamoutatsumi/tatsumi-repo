@@ -13,6 +13,7 @@ jobs:
           - tmux-git
           - flat-remix
           - github.com/gamoutatsumi/alacritty-mold-git
+          - github.com/gamoutatsumi/xremap-x11-bin
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
